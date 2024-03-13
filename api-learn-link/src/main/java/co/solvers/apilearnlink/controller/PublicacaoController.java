@@ -1,5 +1,6 @@
 package co.solvers.apilearnlink;
 
+import co.solvers.apilearnlink.entity.Publicacao;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,4 +1,7 @@
-package co.solvers.apilearnlink;
+package co.solvers.apilearnlink.entity;
+
+import co.solvers.apilearnlink.Imagem;
+import co.solvers.apilearnlink.Reacao;
 
 import java.util.ArrayList;
 import java.util.Date;
