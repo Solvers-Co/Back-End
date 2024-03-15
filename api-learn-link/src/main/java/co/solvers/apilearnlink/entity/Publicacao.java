@@ -12,7 +12,7 @@ public class Publicacao {
     private int id;
     private String titulo;
     private String descricao;
-    private int tipoPostagem;
+    private TipoPublicacaoEnum tipoPublicacao;
     private Date data;
     private String hora;
     private int fkUsuario;
@@ -20,6 +20,7 @@ public class Publicacao {
 
     List<Imagem> imagens = new ArrayList<>();
     List<Reacao> reacoes = new ArrayList<>();
+    List<Publicacao> comentarios = new ArrayList<>();
 
     public int getId() {
         return id;
@@ -45,12 +46,12 @@ public class Publicacao {
         this.descricao = descricao;
     }
 
-    public int getTipoPostagem() {
-        return tipoPostagem;
+    public TipoPublicacaoEnum getTipoPublicacao() {
+        return this.tipoPublicacao;
     }
 
-    public void setTipoPostagem(int tipoPostagem) {
-        this.tipoPostagem = tipoPostagem;
+    public void setTipoPublicacao(TipoPublicacaoEnum tipoPublicacao) {
+        this.tipoPublicacao = tipoPublicacao;
     }
 
     public Date getData() {
@@ -99,5 +100,13 @@ public class Publicacao {
 
     public void setReacoes(List<Reacao> reacoes) {
         this.reacoes = reacoes;
+    }
+
+    public List<Publicacao> getComentarios() {
+        return comentarios;
+    }
+
+    public void setComentarios(Publicacao comentario) {
+        this.comentarios.add(comentario);
     }
 }
