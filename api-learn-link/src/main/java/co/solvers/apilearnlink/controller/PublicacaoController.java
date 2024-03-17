@@ -139,7 +139,7 @@ public class PublicacaoController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity excluir(int id){
+    public ResponseEntity excluir(@PathVariable int id){
 
         Publicacao publicacao = buscarPublicacaoPorID(id);
 
